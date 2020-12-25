@@ -17,16 +17,17 @@
 			<li class="main-nav__item main-nav__item--aboutme">
 				<a href="#" class="main-nav__link">Обо мне</a>
 			</li>
-			<li class="main-nav__item main-nav__item--aboutme">
-				<button class="main-nav__link">Как заказать</button>
+			<li class="main-nav__item main-nav__item--order">
+				<button class="main-nav__button">Как заказать</button>
+			</li>
+			<li class="main-nav__item main-nav__item--payment">
+				<button class="main-nav__button">Оплата</button>
+			</li>
+			<li class="main-nav__item main-nav__item--delivery">
+				<button class="main-nav__button">Доставка</button>
 			</li>
 			<li class="main-nav__item main-nav__item--aboutme">
-				<button class="main-nav__link">Оплата и доставка</button>
-			</li>
-			<li class="main-nav__item main-nav__item--aboutme">
-				<a href="#" class="main-nav__link">Контакты
-
-				</a>
+				<a href="#" class="main-nav__link">Контакты</a>
 			</li>
 		</ul>
 	</nav>
@@ -58,7 +59,9 @@
 
 <main>
 	<section class="intro">
-
+		<p class="intro__text-block"></p>
+		<p class="intro__text-block"></p>
+		<p class="intro__text-block"></p>
 	</section>
 
 	<div class="catalog">
@@ -85,7 +88,7 @@
 				</article>
 			</div>
 		</section>
-		
+
 		<section class="part">
 			<h2 class="part-title">Книги для взрослых</h2>
 			<div class="part__wrapper">
@@ -136,8 +139,48 @@
 	</div>
 </main>
 
-<footer>
+<footer class="footer">
+	<ul class="social">
+		<li class="social__item">
+			<a href="#" class="social__link"></a>
+		</li>
+	</ul>
+	<ul class="contact">
+		<li class="contakt-item">E-Mail: elena.solo.mail2014@gmail.com</li>
+		<li class="contakt-item">Tel.:+49 176 200 63 724</li>
+	</ul>
 </footer>
+
+<section class="modal">
+	<div class="modal-block order-description">
+			<h2 class="modal-block__title">Как сделать заказ</h2>
+			<p class="modal-block__text">- Выберите интересующие вас книги;</p>
+			<p class="modal-block__text">- Свяжитесь со мной для получения реквизитов или чтобы договориться о встрече;</p>
+			<p class="modal-block__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
+				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
+			</p>
+	</div>
+
+	<div class="modal-block payment-description">
+		<h2 class="modal-block__title">Оплата</h2>
+		<p class="modal block__text">Оплату можно произвести...</p>
+		<p class="modal block__text">Стоимость доставки в цену не включена и рассчитывается отдельно.</p>
+	</div>
+
+	<div class="modal-block delivery-description">
+		<h2 class="modal-block__title">Доставка</h2>
+		<p class="modal-block__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
+			или договориться о встрече в Ульме, Мюнхене или Штутгарте.
+			Звоните/пишите, договоримся.
+		</p>
+		<p class="modal-block__text">Могу отправить книги по почте (DHL, Hermes) после предварительной оплаты.</p>
+		<p class="modal-block__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габаритов заказанных книг.</p>
+		<p class="modal-block__text">Тарифы:
+			<a href="#" class="modal-block__link">DHL</a>,
+			<a href="#" class="modal-block__link">Hermes</a>
+		</p>
+	</div>
+</section>
 
 </body>
 </html>
