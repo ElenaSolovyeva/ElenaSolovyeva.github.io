@@ -1,3 +1,115 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans bold";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+/* чтобы при width: 100%; не вываливались из блока padding'и margin'ы */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+
+  background-color: #f8f4f1;
+  color:#000000;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Служебные классы: */
+.reset-list {
+  position: relative;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap; /* Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой;*/
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+/* Стили для классов (в порядке следования в разметке) */
+.header {
+  width: 100%;
+  background-color: red;/*#503a3d;*/
+}
+
+.header-container {
+  /* position: relative; */
+  margin: 0 auto;
+  padding: 0;
+  /* width: 100%; */
+  height: 244px;
+
+  background-image: url("../img/library-2.jpg");
+  background-size: cover;
+}
+
+.part-nav {
+  padding-right: 120px;
+  padding-left: 120px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.part-nav__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 3px 0 4px 0;
+}
+
+.part-nav__item {
+  display: block;
+  height: 100%;
+}
+
+.part-nav__text {
+  font-family: "OpenSans bold", "Arial", sans-serif;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.part-nav__link {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
 }

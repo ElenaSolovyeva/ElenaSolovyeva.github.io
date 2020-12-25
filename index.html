@@ -12,8 +12,8 @@
 <body>
 
 <header class="header">
-	<nav class="main-nav">
-		<ul class="main-nav__list">
+	<nav class="main-nav visually-hidden">
+		<ul class="main-nav__list reset-list">
 			<li class="main-nav__item main-nav__item--aboutme">
 				<a href="#" class="main-nav__link">Обо мне</a>
 			</li>
@@ -33,23 +33,24 @@
 	</nav>
 
 	<div class="header-container">
-		<h1 class="header__title">Книги на русском языке</h1>
-		<img src="img/library@4x.jpg" alt="Заглавное фото. Ирландская национальная библиотека" class="header__image" width="1200" height="525">
+		<h1 class="part-nav__title visually-hidden">Книги на русском языке</h1>
+		<!-- <img src="img/library-2.jpg" alt="Заглавное фото. Ирландская национальная библиотека"
+		 class="header-container__image" width="1200" height="244"> -->
 		<!--320x140, 780x340, 1200x525 -->
+
 	</div>
 
 	<nav class="part-nav">
-		<ul class="part-nav__list">
+		<ul class="part-nav__list reset-list">
+			<li class="part-nav__item">
+				<p href="#" class="part-nav__text">Предлагаю книги:</a>
+			</li>
 			<li class="part-nav__item">
 				<a href="#" class="part-nav__link">Для детей</a>
 			</li>
-		</ul>
-		<ul class="part-nav__list">
 			<li class="part-nav__item">
 				<a href="#" class="part-nav__link">Для взрослых</a>
 			</li>
-		</ul>
-		<ul class="part-nav__list">
 			<li class="part-nav__item">
 				<a href="#" class="part-nav__link">Учебники по математике</a>
 			</li>
@@ -70,6 +71,7 @@
 			<div class="part__wrapper">
 				<article class="part-item book">
 					<a href="#" class="book__link">
+						<div class="book__id"></div>
 						<p class="book__author"></p>
 						<p class="book_name"></p>
 						<img src="#" alt="Фото обложки" class="book__image">
@@ -79,6 +81,7 @@
 				</article>
 				<article class="part-item book">
 					<a href="#" class="book__link">
+						<div class="book__id"></div>
 						<p class="book__author"></p>
 						<p class="book_name"></p>
 						<img src="#" alt="Фото обложки" class="book__image">
@@ -140,34 +143,34 @@
 </main>
 
 <footer class="footer">
-	<ul class="social">
-		<li class="social__item">
-			<a href="#" class="social__link"></a>
-		</li>
-	</ul>
-	<ul class="contact">
-		<li class="contakt-item">E-Mail: elena.solo.mail2014@gmail.com</li>
-		<li class="contakt-item">Tel.:+49 176 200 63 724</li>
+	<ul class="contact reset-list">
+		<li class="contakt-item">Елена Соловьева:</li>
+		<li class="contakt-item">Tel./Whatsapp: +49 176 200 63 ...</li>
+		<li class="contakt-item">E-Mail: elena.solo.mail2014@...</li>
+
 	</ul>
 </footer>
 
 <section class="modal">
-	<div class="modal-block order-description">
+	<div class="modal-block order-description visually-hidden">
 			<h2 class="modal-block__title">Как сделать заказ</h2>
-			<p class="modal-block__text">- Выберите интересующие вас книги;</p>
-			<p class="modal-block__text">- Свяжитесь со мной для получения реквизитов или чтобы договориться о встрече;</p>
+			<p class="modal-block__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети;</p>
+			<p class="modal-block__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
+				и сброшу удобным Вам спосом таблицу/список заказанных книг и реквизиты для оплаты.
+				О встрече можно договориться по телефону или в соц сетях.
+			</p>
 			<p class="modal-block__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
 				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
 			</p>
 	</div>
 
-	<div class="modal-block payment-description">
+	<div class="modal-block payment-description visually-hidden">
 		<h2 class="modal-block__title">Оплата</h2>
 		<p class="modal block__text">Оплату можно произвести...</p>
 		<p class="modal block__text">Стоимость доставки в цену не включена и рассчитывается отдельно.</p>
 	</div>
 
-	<div class="modal-block delivery-description">
+	<div class="modal-block delivery-description visually-hidden">
 		<h2 class="modal-block__title">Доставка</h2>
 		<p class="modal-block__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
 			или договориться о встрече в Ульме, Мюнхене или Штутгарте.
