@@ -12,15 +12,128 @@
 <body>
 
 <header class="header">
-	<h1 class="header__title">Книги на русском языке в Германии</h1>
-	<img src="img/library@4x.jpg" alt="Заглавное фото. Ирландская национальная библиотека" class="header__image" width="1200" height="525"> <!--320x140, 780x340, 1200x525 -->
+	<nav class="main-nav">
+		<ul class="main-nav__list">
+			<li class="main-nav__item main-nav__item--aboutme">
+				<a href="#" class="main-nav__link">Обо мне</a>
+			</li>
+			<li class="main-nav__item main-nav__item--aboutme">
+				<button class="main-nav__link">Как заказать</button>
+			</li>
+			<li class="main-nav__item main-nav__item--aboutme">
+				<button class="main-nav__link">Оплата и доставка</button>
+			</li>
+			<li class="main-nav__item main-nav__item--aboutme">
+				<a href="#" class="main-nav__link">Контакты
+
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="header-container">
+		<h1 class="header__title">Книги на русском языке</h1>
+		<img src="img/library@4x.jpg" alt="Заглавное фото. Ирландская национальная библиотека" class="header__image" width="1200" height="525">
+		<!--320x140, 780x340, 1200x525 -->
+	</div>
+
+	<nav class="part-nav">
+		<ul class="part-nav__list">
+			<li class="part-nav__item">
+				<a href="#" class="part-nav__link">Для детей</a>
+			</li>
+		</ul>
+		<ul class="part-nav__list">
+			<li class="part-nav__item">
+				<a href="#" class="part-nav__link">Для взрослых</a>
+			</li>
+		</ul>
+		<ul class="part-nav__list">
+			<li class="part-nav__item">
+				<a href="#" class="part-nav__link">Учебники по математике</a>
+			</li>
+		</ul>
+	</nav>
 </header>
 
 <main>
-	<section>
-		<h2>Для дошкольников и школьников</h2>
-		<h3>Русские сказки</h3>  <!-- ***** Русские сказки ***** -->
+	<section class="intro">
+
 	</section>
+
+	<div class="catalog">
+		<section class="part">
+			<h2 class="part-title">Детские книги</h2>
+			<div class="part__wrapper">
+				<article class="part-item book">
+					<a href="#" class="book__link">
+						<p class="book__author"></p>
+						<p class="book_name"></p>
+						<img src="#" alt="Фото обложки" class="book__image">
+						<p class="book__price"></p>
+						<p class="book__details"></p>
+					</a>
+				</article>
+				<article class="part-item book">
+					<a href="#" class="book__link">
+						<p class="book__author"></p>
+						<p class="book_name"></p>
+						<img src="#" alt="Фото обложки" class="book__image">
+						<p class="book__price"></p>
+						<p class="book__details"></p>
+					</a>
+				</article>
+			</div>
+		</section>
+		
+		<section class="part">
+			<h2 class="part-title">Книги для взрослых</h2>
+			<div class="part__wrapper">
+				<article class="part-item book">
+					<a href="#" class="book__link">
+						<p class="book__author"></p>
+						<p class="book_name"></p>
+						<img src="#" alt="Фото обложки" class="book__image">
+						<p class="book__price"></p>
+						<p class="book__details"></p>
+					</a>
+				</article>
+				<article class="part-item book">
+					<a href="#" class="book__link">
+						<p class="book__author"></p>
+						<p class="book_name"></p>
+						<img src="#" alt="Фото обложки" class="book__image">
+						<p class="book__price"></p>
+						<p class="book__details"></p>
+					</a>
+				</article>
+			</div>
+		</section>
+
+		<section class="part">
+			<h2 class="part-title">Учебники по математике</h2>
+			<div class="part__wrapper">
+				<article class="part-item book">
+					<a href="#" class="book__link">
+						<p class="book__author"></p>
+						<p class="book_name"></p>
+						<img src="#" alt="Фото обложки" class="book__image">
+						<p class="book__price"></p>
+						<p class="book__details"></p>
+					</a>
+				</article>
+				<article class="part-item book">
+					<a href="#" class="book__link">
+						<p class="book__author"></p>
+						<p class="book_name"></p>
+						<img src="#" alt="Фото обложки" class="book__image">
+						<p class="book__price"></p>
+						<p class="book__details"></p>
+					</a>
+				</article>
+			</div>
+		</section>
+	</div>
 </main>
 
 <footer>
