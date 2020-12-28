@@ -122,15 +122,16 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 980px;
+  width: 1200px;
 }
 
-.catalog {
+/* .catalog {
   padding-left: 25px;
-}
+} */
 
 .part__title {
   margin: 0 0 25px 0;
+  padding-left: 25px;
   padding-top: 10px;
 }
 
@@ -139,10 +140,13 @@ img {
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 }
+
 /* Карточка товара */
+
 .book {
   display: -webkit-flex;
   display: -ms-flex;
@@ -150,14 +154,10 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
 
-  margin-right: 25px;
-  margin-bottom: 25px;
-  padding: 10px 15px;
-  width: 210px;
+  margin-right: 18px;
+  margin-bottom: 30px;
+  width: 250px;
   min-height: 210px;
-
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
   color: #503a3d;
 }
@@ -165,63 +165,123 @@ img {
 /* блок с краткой информацией */
 
 .book__short {
+  position: relative;
+}
+
+.book__tabs-wrapper {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-
-.book__author {
-  margin: 0;
-  padding-left: 5px;
-  font-size: 12px;
-}
-
-.book__number {
-  /* font-family: "OpenSans bold", "Arial", sans-serif; */
-  /* color: #000; */
-}
-
-.book__name {
-  margin: 0 0 5px 0;
-  padding-left: 5px;
-  font-family: "OpenSans bold", "Arial", sans-serif;
-}
-
-.book__image {
-  margin: 0 auto 15px auto;
-  height: 200px;
-}
-
-.book__price-wrapper {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 7px 0;
-  padding-left: 10%;
-  width: 100%;
-}
-
-.book__price {
-  margin: 0;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  width: 44%;
-  min-height: 30px;
-  text-align: center;
-  border: 1px solid #503a3d;
 }
 
 .book__id {
-  margin: 0;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  width: 44%;
+  margin: 0 0 0 2px;
+  padding: 2px 5px 2px 5px;
+  width: 40px;
   min-height: 30px;
-  background-color: #503a3d;
+
+  color: #ffffff;
+  font-family: "OpenSans bold", "Arial", sans-serif;
+  text-align: center;
+  background-color: #c58e4d;
+  border: 1px solid #c1853f;
+  border-bottom: 2px solid #dfdfc5; /*#f8f4f1;*/
+  border-radius: 5px 5px 0 0;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.book__age-group {
+  margin: 0 0 0 5px;
+  padding: 2px 5px 2px 5px;
+  min-height: 30px;
+
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.book__age-group--1 {
+  width: 70px;
+
+  background-color: #e74b7b;
+  border: 1px solid #de2a61;
+  border-bottom: 2px solid #ffd5df;
+}
+
+.book__age-group--2 {
+  width: 80px;
+
+  background-color: #fd9800;
+  border: 1px solid #f38f00;
+  border-bottom: 2px solid #dfdfc5;
+  border-radius: 5px 5px 0 0;
+}
+
+.book__image-wrapper {
+  position: relative;
+}
+
+.book__image {
+  margin: 0 30px 15px 0;
+  width: 210px;
+  height: auto;
+
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.book__image:hover {
+  /* margin: -2px 10px auto -5px; */
+  width: 200px;
+  height: auto;
+
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.book__price {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+
+
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding-top: 12px;
+
+  font-family: "OpenSans bold", "Arial", sans-serif;
+  font-size: 18px;
   color: #ffffff;
   text-align: center;
+  background-color: rgba(255,0,0,.85);
+  border-radius: 50%;
+}
+
+.book__placeholder {
+  font-size: 7px;
+}
+
+.book__summary-link {
+  margin: 0;
+
+  color: #000000;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.book__summary-link:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* блок с информацией об издании */
