@@ -87,7 +87,7 @@ img {
 
 .part-nav {
   margin: 0 auto;
-  width: 980px;
+  width: 1150px;
   min-height: 30px;
   background-color: #000000;
 }
@@ -99,12 +99,24 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 3px 50px 4px 25px;
 }
 
 .part-nav__item {
   display: block;
+  padding: 3px 25px 4px 25px;
   height: 100%;
+}
+
+.part-nav__item:hover {
+  background-color: #a06700; /*#663D15 (102,61,21)*/
+}
+
+.part-nav__item:active {
+  background-color: #663D15; /*(102,61,21)*/
+}
+
+.part-nav__item:last-child {
+  margin-right: 20px;
 }
 
 .part-nav__text {
@@ -122,7 +134,7 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1150px;
 }
 
 /* .catalog {
@@ -130,7 +142,7 @@ img {
 } */
 
 .part__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
   padding-left: 25px;
   padding-top: 10px;
 }
@@ -148,24 +160,31 @@ img {
 /* Карточка товара */
 
 .book {
+  position: relative;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
-  margin-right: 18px;
-  margin-bottom: 30px;
-  width: 250px;
+  margin-right: 50px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  width: 550px;
   min-height: 210px;
 
   color: #503a3d;
 }
 
-/* блок с краткой информацией */
+.book:nth-child(4n) {
+  margin-right: 0;
+}
 
 .book__short {
   position: relative;
+  margin: 0;
+  padding: 0 20px;
+  width: 250px;
 }
 
 .book__tabs-wrapper {
@@ -224,10 +243,11 @@ img {
 
 .book__image-wrapper {
   position: relative;
+  margin-bottom: 15px;
 }
 
 .book__image {
-  margin: 0 30px 15px 0;
+  /* margin: 0 30px 15px 0; */
   width: 210px;
   height: auto;
 
@@ -254,7 +274,6 @@ img {
   bottom: 50px;
   right: 10px;
 
-
   width: 50px;
   height: 50px;
   margin: 0;
@@ -272,16 +291,127 @@ img {
   font-size: 7px;
 }
 
-.book__summary-link {
+.book__summary {
   margin: 0;
 
+  color: #000000;
+  font-size: 12px;
+}
+
+.book__summary-link {
   color: #000000;
   font-size: 12px;
   text-decoration: underline;
 }
 
 .book__summary-link:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: #a06700;
 }
 
-/* блок с информацией об издании */
+.book__external-link {
+  margin: 0;
+  padding-left: 9px;
+}
+
+/* Блок с подробной информацией о книге */
+
+.book__details {
+  position: relative;
+  padding: 0 15px;
+  width: 300px;
+  min-height: 320px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.book__details::before {
+  content: " ";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-image: url(../img/icon-close.svg);
+}
+
+.book__name {
+  margin: 0 0 10px 0;
+  padding-top: 30px;
+
+  color: #000000;
+  font-family: "OpenSans bold", "Arial", sans-serif;
+  font-style: 16px;
+}
+
+.book__info {
+  color: #000000;
+  font-size: 11px;
+  margin: 0 0 5px 0;
+}
+
+.book__content {
+  display: block;
+  margin: 0 0 5px 0;
+  padding: 0;
+
+  color: #1868a0; /*#503a3d;*/
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 11px;
+  border: none;
+  border-bottom: 1px dashed #1868a0;
+  background-color: transparent;
+}
+
+.book__content:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Блок с id и ценой*/
+
+.id-price-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 0 0 10px 0;
+  padding: 10px 10px;
+
+  font-size: 18px;
+}
+
+.id-price-block__id {
+  margin: 0;
+  padding: 6px 10px 5px 10px;
+
+  color: #ffffff;
+  /* font-family: "OpenSans bold", "Arial", sans-serif; */
+  background-color: rgba(255,0,0,.85); /*#a06700;*/
+}
+
+.id-price-block__price {
+  margin: 0;
+  padding: 5px 15px 5px 25px;
+  font-family: "OpenSans bold", "Arial", sans-serif;
+  border: 2px solid rgba(255,0,0,.85);
+}
+
+.id-price-block__plaseholder {
+  font-size: 5px;
+}
+
+.id-price-block__rem {
+  color: grey;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 11px;
+}
+
+
+/* МОДАЛЬНЫЕ ОКНА */
+
+/* ЗАКАЗ - ОПЛАТА - ДОСТАВКА */
+
+/* Подробная карточка товара */

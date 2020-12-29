@@ -43,7 +43,7 @@
 	<nav class="part-nav">
 		<ul class="part-nav__list reset-list">
 			<li class="part-nav__item button">
-				<p href="#" class="part-nav__text">Предлагаю книги:</a>
+				<a href="#" class="part-nav__text">Предлагаю книги:</a>
 			</li>
 			<li class="part-nav__item">
 				<a href="#" class="part-nav__link button">детские</a>
@@ -70,30 +70,48 @@
 			<h2 class="part__title">Детские книги</h2>
 
 			<div class="part__wrapper">
-
-				<article class="book part__item">
-					<div class="book__short">
-						<div class="book__tabs-wrapper">
+				<article class="book">
+					<div class="book__short"> <!--*********** book__short *********** -->
+						<div class="book__tabs-wrapper"> <!-- 1. tabs -->
 							<p class="book__id">85.</p>
 							<p class="book__age-group book__age-group--1">дошколь- ники</p>
 							<p class="book__age-group book__age-group--2">младшие школьники</p>
 						</div>
-						<div class="book__image-wrapper">
+						<div class="book__image-wrapper">  <!-- 2. image -->
 							<img  class="book__image" src="img/001-cover.jpg" alt="Фото обложки">
-							<div class="book__price">25<span class="book__placeholder"> </span>&#8364;</div>
+							<div class="book__price visually-hidden">25<span class="book__placeholder"> </span>&#8364;</div>
 						</div>
+						                                   <!-- 3. link labirint-->
 						<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
-							<p class="book__summary">Блеск! Было ли еще издание, в котором замысел Петра Ершова
+							<p class="book__summary visually-hidden"> >> Блеск! Было ли еще издание, в котором замысел Петра Ершова
 								и Николая Кочергина был реализован столь же точно? Я имею ввиду оформление;
-								 такого ещё не видывал.
+								 такого ещё не видывал (labirint.ru)
+							 </p>
+							<p class="book__external-link"> >> Фото и отзывы на labirint.ru
 							 </p>
 						</a>
 					</div>
-					<div class="book__edition visually-hidden">
-						<p class="book__name">П.П. Ершов: Конек-горбунок</p>
+					<div class="book__details"> <!--*********** book__details *********** -->
+						<p class="book__name">Петр Ершов: Конёк-горбунок</p>
+						<p class="book__info visually-hidden"></p>  <!-- book__translator -->
+						<p class="book__info">Художник: Кочергин Николай Михайлович</p> <!-- book__painter -->
+						<p class="book__info">Издательство: Нигма, 2012 г.</p> <!-- book_publisher -->
+						<div class="id-price-block">
+							<p class="id-price-block__id"># 85</p>
+							<p class="id-price-block__price">25 <span class="id-price-block__plaseholder"> </span>&#8364;
+								<span class="id-price-block__rem">без доставки</span>
+							</p>
+						</div>
+						<div class="book__info">ISBN: 978-5-4335-0008-2</div> <!-- book__isbn -->
+						<div class="book__info">Страниц: 136 (Мелованная)</div> <!-- book__pages-number -->
+						<div class="book__info">Масса: 1256 г</div> <!-- book__weight -->
+						<div class="book__info">Размеры: 347x252x16 мм</div> <!-- book__size -->
+						<button class="book__content">Содержание</button>
+						<button class="book__content">Рецензии</button>
 					</div>
-				</article>
 
+
+				</article>
 			</div>
 		</section>
 
@@ -122,26 +140,36 @@
 	</ul>
 </footer>
 
-<section class="modal">
-	<div class="modal-block order-description visually-hidden">
-			<h2 class="modal-block__title">Как сделать заказ</h2>
-			<p class="modal-block__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети;</p>
-			<p class="modal-block__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
-				и сброшу удобным Вам спосом таблицу/список заказанных книг и реквизиты для оплаты.
-				О встрече можно договориться по телефону или в соц сетях.
-			</p>
-			<p class="modal-block__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
-				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
-			</p>
+<section>
+	<article class="details" id="001">
+		
+	</article>
+</section>
+
+<section class="visually-hidden">
+	<div class="modal-block intro">
+		<h2 class="modal-block__title">Предлагаю книги на русском языке</h2>
+		<p class="modal-block__text">...</p>
+	</div>
+	<div class="modal-block order-description">
+		<h2 class="modal-block__title">Как сделать заказ</h2>
+		<p class="modal-block__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети;</p>
+		<p class="modal-block__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
+			и сброшу удобным Вам спосом таблицу/список заказанных книг и реквизиты для оплаты.
+			О встрече можно договориться по телефону или в соц сетях.
+		</p>
+		<p class="modal-block__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
+			скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
+		</p>
 	</div>
 
-	<div class="modal-block payment-description visually-hidden">
+	<div class="modal-block payment-description">
 		<h2 class="modal-block__title">Оплата</h2>
 		<p class="modal block__text">Оплату можно произвести...</p>
 		<p class="modal block__text">Стоимость доставки в цену не включена и рассчитывается отдельно.</p>
 	</div>
 
-	<div class="modal-block delivery-description visually-hidden">
+	<div class="modal-block delivery-description">
 		<h2 class="modal-block__title">Доставка</h2>
 		<p class="modal-block__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
 			или договориться о встрече в Ульме, Мюнхене или Штутгарте.
@@ -155,6 +183,5 @@
 		</p>
 	</div>
 </section>
-
 </body>
 </html>
