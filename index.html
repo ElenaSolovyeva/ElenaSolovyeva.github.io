@@ -14,37 +14,35 @@
 <header class="header">
 	<h1 class="visually-hidden">Книги на русском языке</h1>
 
-	<nav class="part-nav">
-		<ul class="part-nav__list reset-list">
-			<li class="part-nav__item button">
-				<a href="#" class="part-nav__text">Предлагаю книги</a>
+	<nav class="nav">
+		<ul class="nav__list reset-list">
+			<li class="nav__item button">
+				<a href="#" class="nav__link">Предлагаю книги:</a>
 			</li>
-			<li class="part-nav__item">
-				<a href="card.html" class="part-nav__link">детские</a>
+			<li class="nav__item">
+				<a href="#" class="nav__link">детские</a>
 			</li>
-			<li class="part-nav__item">
-				<a href="#" class="part-nav__link">взрослые:)</a>
+			<li class="nav__item">
+				<a href="#" class="nav__link">взрослые:)</a>
 			</li>
-			<li class="part-nav__item">
-				<a href="#" class="part-nav__link">по математике</a>
+			<li class="nav__item">
+				<a href="#" class="nav__link">по математике</a>
 			</li>
 		</ul>
-		<ul class="part-nav__list reset-list">
-			<li class="part-nav__item">
-				<a href="#" class="part-nav__link">заказ</a>
+		<ul class="nav__list reset-list">
+			<li class="nav__item">
+				<a href="#" class="nav__link">как заказать</a>
 			</li>
-			<li class="part-nav__item">
-				<a href="#" class="part-nav__link">оплата</a>
-			</li>
-			<li class="part-nav__item">
-				<a href="#" class="part-nav__link">доставка</a>
+			<li class="nav__item">
+				<a href="#" class="nav__link">доставка</a>
 			</li>
 		</ul>
 	</nav>
 </header>
 
 <main class="container">
-	<section class="intro">
+	<section class="intro visually-hidden">
+		<h2>Как заказать и оплатить</h2>
 		<p class="intro__text-block"></p>
 		<p class="intro__text-block"></p>
 		<p class="intro__text-block"></p>
@@ -56,157 +54,191 @@
 
 			<div class="part__wrapper">
 				<article class="book">
-					<div class="book__short"> <!--*********** book__short *********** -->
-						<div class="book__tabs-wrapper">
-							<p class="book__id">1.</p>
-							<p class="book__age-group book__age-group--1">дошколь- ники</p>
-							<p class="book__age-group book__age-group--2">младшие школьники</p>
-						</div>
-						<div class="book__image-wrapper">
+					<h3 class="visually-hidden">Автор: название</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 1</p>
+						<p class="book__age-group book__age-group--1">дошкольники</p>
+					</div>
+					<div class="book__image-wrapper book__image-wrapper--heigh">
+						<a href="card-001.html">
 							<img  class="book__image" src="img/001-cover.jpg" alt="Фото обложки">
-							<div class="book__price visually-hidden">25<span class="book__placeholder"> </span>&#8364;</div>
-						</div>
-						<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
-							<p class="visually-hidden"> >> Блеск! Было ли еще издание, в котором замысел Петра Ершова
-								и Николая Кочергина был реализован столь же точно? Я имею ввиду оформление;
-								 такого ещё не видывал (labirint.ru)
-							 </p>
-							<p class="book__external-link"> >> Фото и отзывы на labirint.ru</p>
+							<div class="book__price">25
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
 						</a>
 					</div>
-					<div class="book__details"> <!--*********** book__details *********** -->
-						<p class="book__name">Петр Ершов: Конёк-горбунок</p>
-						<p class="book__info visually-hidden"></p>  <!-- book__translator -->
-						<p class="book__info">Художник: Кочергин Николай Михайлович</p> <!-- book__painter -->
-						<p class="book__info">Издательство: Нигма, 2012 г.</p> <!-- book_publisher -->
-						<div class="id-price">
-							<p class="id-price__id"># 1</p>
-							<p class="id-price__price">25 <span class="id-price__plaseholder"> </span>&#8364;
-								<span class="id-price__rem">без доставки</span>
-							</p>
-						</div>
-						<div class="book__info">ISBN: 978-5-4335-0008-2</div> <!-- book__isbn -->
-						<div class="book__info">Страниц: 136 (Мелованная)</div> <!-- book__pages-number -->
-						<div class="book__info">Масса: 1256 г</div> <!-- book__weight -->
-						<div class="book__info">Размеры: 347x252x16 мм</div> <!-- book__size -->
-						<button class="book__content">Содержание</button>
-						<button class="book__content">Рецензии</button>
-					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
+						<p class="book__summary"> Блеск! Было ли еще издание, в котором замысел Петра Ершова
+							и Николая Кочергина был реализован столь же точно?
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
 				</article>
-				<!-- ***************************** TEST **************************-->
 				<article class="book">
-					<div class="book__short"> <!--*********** book__short *********** -->
-						<div class="book__tabs-wrapper">
-							<p class="book__id">16.</p>
-							<p class="book__age-group book__age-group--3">средние классы</p>
-						</div>
-						<div class="book__image-wrapper">
+					<h3 class="visually-hidden">Автор: название</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 16</p>
+						<p class="book__age-group book__age-group--2">младшие классы</p>
+					</div>
+					<div class="book__image-wrapper book__image-wrapper--middle">
+						<a href="card-016.html">
 							<img  class="book__image" src="img/016-cover.jpg" alt="Фото обложки">
-							<div class="book__price">12<span class="book__placeholder"> </span>&#8364;</div>
-						</div>
-						<a class="book__summary-link" href="https://www.labirint.ru/reviews/goods/356725/" target="_blank">
-							<p class="book__summary"> >> Подарочное издание. Текст классический, без сокращений. Бесподобные иллюстрации Игоря Ильинского. Качество печати – преотличнейшее! (labirint.ru)
-							 </p>
-							<p class="book__external-link visually-hidden"> >> Фото и отзывы на labirint.ru
-							 </p>
+							<div class="book__price">11
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
 						</a>
 					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/356725/" target="_blank">
+						<p class="book__summary"> Подарочное издание. Текст классический. Замечательные иллюстрации Игоря Ильинского.
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
 				</article>
 				<article class="book">
-					<div class="book__short"> <!--*********** book__short *********** -->
-						<div class="book__tabs-wrapper">
-							<p class="book__id">85.</p>
-							<p class="book__age-group book__age-group--3">средние классы</p>
-						</div>
-						<div class="book__image-wrapper">
+					<h3 class="visually-hidden">Ирина Бурова: Уильям Шекспир</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 42</p>
+						<p class="book__age-group book__age-group--4">старшеклассники</p>
+					</div>
+					<div class="book__image-wrapper">
+						<a href="card-042.html">
+							<img  class="book__image" src="img/042-cover.jpg" alt="Фото обложки">
+							<div class="book__price">20
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
+						</a>
+					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/285935/" target="_blank">
+						<p class="book__summary">  Большой формат, секретики на многих разворотах
+							(в них всяко разно - от сонетов до портретов героев).
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
+				</article>
+				<article class="book">
+					<h3 class="visually-hidden">Автор: название</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 1</p>
+						<p class="book__age-group book__age-group--1">дошкольники</p>
+					</div>
+					<div class="book__image-wrapper book__image-wrapper--heigh">
+						<a href="card-001.html">
 							<img  class="book__image" src="img/001-cover.jpg" alt="Фото обложки">
-							<div class="book__price">25<span class="book__placeholder"> </span>&#8364;</div>
-						</div>
-						<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
-							<p class="book__summary"> >> Блеск! Было ли еще издание, в котором замысел Петра Ершова
-								и Николая Кочергина был реализован столь же точно? Я имею ввиду оформление;
-								 такого ещё не видывал (labirint.ru)
-							 </p>
-							<p class="book__external-link visually-hidden"> >> Фото и отзывы на labirint.ru
-							 </p>
+							<div class="book__price">25
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
 						</a>
 					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
+						<p class="book__summary"> Блеск! Было ли еще издание, в котором замысел Петра Ершова
+							и Николая Кочергина был реализован столь же точно?
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
 				</article>
 				<article class="book">
-					<div class="book__short"> <!--*********** book__short *********** -->
-						<div class="book__tabs-wrapper">
-							<p class="book__id">16.</p>
-							<p class="book__age-group book__age-group--3">средние классы</p>
-						</div>
-						<div class="book__image-wrapper">
+					<h3 class="visually-hidden">Автор: название</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 16</p>
+						<p class="book__age-group book__age-group--3">средние классы</p>
+					</div>
+					<div class="book__image-wrapper book__image-wrapper--middle">
+						<a href="card-016.html">
 							<img  class="book__image" src="img/016-cover.jpg" alt="Фото обложки">
-							<div class="book__price">12<span class="book__placeholder"> </span>&#8364;</div>
-						</div>
-						<a class="book__summary-link" href="https://www.labirint.ru/reviews/goods/356725/" target="_blank">
-							<p class="book__summary"> >> Подарочное издание. Текст классический, без сокращений. Бесподобные иллюстрации Игоря Ильинского. Качество печати – преотличнейшее! (labirint.ru)
-							 </p>
-							<p class="book__external-link visually-hidden"> >> Фото и отзывы на labirint.ru
-							 </p>
+							<div class="book__price">11
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
 						</a>
 					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/356725/" target="_blank">
+						<p class="book__summary"> Подарочное издание. Текст классический. Замечательные иллюстрации Игоря Ильинского.
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
 				</article>
 				<article class="book">
-					<div class="book__short"> <!--*********** book__short *********** -->
-						<div class="book__tabs-wrapper">
-							<p class="book__id">1.</p>
-							<p class="book__age-group book__age-group--1">дошколь- ники</p>
-							<p class="book__age-group book__age-group--2">младшие школьники</p>
-						</div>
-						<div class="book__image-wrapper">
+					<h3 class="visually-hidden">Ирина Бурова: Уильям Шекспир</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 42</p>
+						<p class="book__age-group book__age-group--4">старшеклассники</p>
+					</div>
+					<div class="book__image-wrapper">
+						<a href="card-042.html">
+							<img  class="book__image" src="img/042-cover.jpg" alt="Фото обложки">
+							<div class="book__price">20
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
+						</a>
+					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/285935/" target="_blank">
+						<p class="book__summary">  Большой формат, секретики на многих разворотах
+							(в них всяко разно - от сонетов до портретов героев).
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
+				</article>
+				<article class="book">
+					<h3 class="visually-hidden">Автор: название</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 1</p>
+						<p class="book__age-group book__age-group--1">дошкольники</p>
+					</div>
+					<div class="book__image-wrapper book__image-wrapper--heigh">
+						<a href="card-001.html">
 							<img  class="book__image" src="img/001-cover.jpg" alt="Фото обложки">
-							<div class="book__price visually-hidden">25<span class="book__placeholder"> </span>&#8364;</div>
-						</div>
-						<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
-							<p class="visually-hidden"> >> Блеск! Было ли еще издание, в котором замысел Петра Ершова
-								и Николая Кочергина был реализован столь же точно? Я имею ввиду оформление;
-								 такого ещё не видывал (labirint.ru)
-							 </p>
-							<p class="book__external-link"> >> Фото и отзывы на labirint.ru</p>
+							<div class="book__price">25
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
 						</a>
 					</div>
-					<div class="book__details"> <!--*********** book__details *********** -->
-						<p class="book__name">Петр Ершов: Конёк-горбунок</p>
-						<p class="book__info visually-hidden"></p>  <!-- book__translator -->
-						<p class="book__info">Художник: Кочергин Николай Михайлович</p> <!-- book__painter -->
-						<p class="book__info">Издательство: Нигма, 2012 г.</p> <!-- book_publisher -->
-						<div class="id-price">
-							<p class="id-price__id"># 1</p>
-							<p class="id-price__price">25 <span class="id-price__plaseholder"> </span>&#8364;
-								<span class="id-price__rem">без доставки</span>
-							</p>
-						</div>
-						<div class="book__info">ISBN: 978-5-4335-0008-2</div> <!-- book__isbn -->
-						<div class="book__info">Страниц: 136 (Мелованная)</div> <!-- book__pages-number -->
-						<div class="book__info">Масса: 1256 г</div> <!-- book__weight -->
-						<div class="book__info">Размеры: 347x252x16 мм</div> <!-- book__size -->
-						<button class="book__content">Содержание</button>
-						<button class="book__content">Рецензии</button>
-					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/297139/" target="_blank">
+						<p class="book__summary"> Блеск! Было ли еще издание, в котором замысел Петра Ершова
+							и Николая Кочергина был реализован столь же точно?
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
 				</article>
 				<article class="book">
-					<div class="book__short"> <!--*********** book__short *********** -->
-						<div class="book__tabs-wrapper">
-							<p class="book__id">16.</p>
-							<p class="book__age-group book__age-group--3">средние классы</p>
-						</div>
-						<div class="book__image-wrapper">
+					<h3 class="visually-hidden">Автор: название</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 16</p>
+						<p class="book__age-group book__age-group--3">средние классы</p>
+					</div>
+					<div class="book__image-wrapper book__image-wrapper--middle">
+						<a href="card-016.html">
 							<img  class="book__image" src="img/016-cover.jpg" alt="Фото обложки">
-							<div class="book__price">12<span class="book__placeholder"> </span>&#8364;</div>
-						</div>
-						<a class="book__summary-link" href="https://www.labirint.ru/reviews/goods/356725/" target="_blank">
-							<p class="book__summary"> >> Подарочное издание. Текст классический, без сокращений. Бесподобные иллюстрации Игоря Ильинского. Качество печати – преотличнейшее! (labirint.ru)
-							 </p>
-							<p class="book__external-link visually-hidden"> >> Фото и отзывы на labirint.ru
-							 </p>
+							<div class="book__price">11
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
 						</a>
 					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/356725/" target="_blank">
+						<p class="book__summary"> Подарочное издание. Текст классический. Замечательные иллюстрации Игоря Ильинского.
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
 				</article>
-
+				<article class="book">
+					<h3 class="visually-hidden">Ирина Бурова: Уильям Шекспир</h3>
+					<div class="book__tabs-wrapper">
+						<p class="book__id"># 42</p>
+						<p class="book__age-group book__age-group--4">старшеклассники</p>
+					</div>
+					<div class="book__image-wrapper">
+						<a href="card-042.html">
+							<img  class="book__image" src="img/042-cover.jpg" alt="Фото обложки">
+							<div class="book__price">20
+								<span class="book__placeholder"> </span>&#8364;
+							</div>
+						</a>
+					</div>
+					<a class="book__summary-link" href="https://www.labirint.ru/books/285935/" target="_blank">
+						<p class="book__summary">  Большой формат, секретики на многих разворотах
+							(в них всяко разно - от сонетов до портретов героев).
+							<span class="book__source"> >> labirint.ru</span>
+						 </p>
+					</a>
+				</article>
 
 			</div>
 		</section>
@@ -236,15 +268,10 @@
 	</ul>
 </footer>
 
-<section>
-	<article class="details" id="001">
-
-	</article>
-</section>
 
 <section class="visually-hidden">
 	<div class="modal-block intro">
-		<h2 class="modal-block__title">Предлагаю книги на русском языке</h2>
+		<h2 class="modal-block__title">Заказ, оплата, доставка.</h2>
 		<p class="modal-block__text">...</p>
 	</div>
 	<div class="modal-block order-description">
@@ -258,20 +285,13 @@
 			скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
 		</p>
 	</div>
-
-	<div class="modal-block payment-description">
-		<h2 class="modal-block__title">Оплата</h2>
-		<p class="modal block__text">Оплату можно произвести...</p>
-		<p class="modal block__text">Стоимость доставки в цену не включена и рассчитывается отдельно.</p>
-	</div>
-
 	<div class="modal-block delivery-description">
 		<h2 class="modal-block__title">Доставка</h2>
 		<p class="modal-block__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
 			или договориться о встрече в Ульме, Мюнхене или Штутгарте.
 			Звоните/пишите, договоримся.
 		</p>
-		<p class="modal-block__text">Могу отправить книги по почте (DHL, Hermes) после предварительной оплаты.</p>
+		<p class="modal-block__text">Возможна отправка почтой (DHL, Hermes) после предварительной оплаты.</p>
 		<p class="modal-block__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габаритов заказанных книг.</p>
 		<p class="modal-block__text">Тарифы:
 			<a href="#" class="modal-block__link">DHL</a>,
