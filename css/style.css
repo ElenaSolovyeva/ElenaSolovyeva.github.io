@@ -75,6 +75,12 @@ img {
 }
 
 .part-nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
   margin: 0 auto;
   width: 1150px;
   min-height: 30px;
@@ -141,6 +147,7 @@ img {
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
@@ -156,7 +163,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
 
-  margin-right: 50px;
+  /* margin-right: 50px; */
   margin-bottom: 15px;
   padding-top: 15px;
   /* width: 550px; */
