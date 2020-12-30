@@ -69,7 +69,6 @@ img {
 /* HEADER */
 
 .header {
-  margin-bottom: 25px;
   width: 100%;
   background-color: #000000;/*#503a3d;*/
 }
@@ -80,7 +79,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+
   margin: 0 auto;
   width: 1150px;
   min-height: 30px;
@@ -129,7 +128,9 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 1150px;
+  padding: 50px 25px;
+  width: 1200px;
+  background-color: #ffffff;
 }
 
 /* .catalog {
