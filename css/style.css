@@ -74,17 +74,6 @@ img {
   background-color: #000000;/*#503a3d;*/
 }
 
-.header-container {
-  /* position: relative; */
-  margin: 0 auto;
-  padding: 0;
-  /* width: 100%; */
-  height: 244px;
-
-  background-image: url("../img/library-2.jpg");
-  background-size: cover;
-}
-
 .part-nav {
   margin: 0 auto;
   width: 1150px;
@@ -170,7 +159,7 @@ img {
   margin-right: 50px;
   margin-bottom: 15px;
   padding-top: 15px;
-  width: 550px;
+  /* width: 550px; */
   min-height: 210px;
 
   color: #503a3d;
@@ -241,6 +230,14 @@ img {
   border-radius: 5px 5px 0 0;
 }
 
+.book__age-group--3 {
+  width: 70px;
+
+  background-color: #38a78e;
+  border: 1px solid #1c9278;
+  border-bottom: 2px solid #c4e9e1;
+}
+
 .book__image-wrapper {
   position: relative;
   margin-bottom: 15px;
@@ -271,8 +268,8 @@ img {
 
 .book__price {
   position: absolute;
-  bottom: 50px;
-  right: 10px;
+  bottom: 30px;
+  right: -15px;
 
   width: 50px;
   height: 50px;
@@ -317,10 +314,10 @@ img {
 
 .book__details {
   position: relative;
-  padding: 0 15px;
-  width: 300px;
+  padding: 0 15px 0 0;
+  width: 265px;
   min-height: 320px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 2px;
 }
 
@@ -370,7 +367,7 @@ img {
 
 /* Блок с id и ценой*/
 
-.id-price-block {
+.id-price {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -378,32 +375,31 @@ img {
   flex-wrap: wrap;
 
   margin: 0 0 10px 0;
-  padding: 10px 10px;
+  padding: 10px 0;
 
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 18px;
 }
 
-.id-price-block__id {
+.id-price__id {
   margin: 0;
-  padding: 6px 10px 5px 10px;
-
+  padding: 5px;
   color: #ffffff;
-  /* font-family: "OpenSans bold", "Arial", sans-serif; */
-  background-color: rgba(255,0,0,.85); /*#a06700;*/
-}
-
-.id-price-block__price {
-  margin: 0;
-  padding: 5px 15px 5px 25px;
-  font-family: "OpenSans bold", "Arial", sans-serif;
+  background-color: rgba(255,0,0,.85);
   border: 2px solid rgba(255,0,0,.85);
 }
 
-.id-price-block__plaseholder {
+.id-price__price {
+  margin: 0;
+  padding: 5px 8px;
+  border: 2px solid rgba(255,0,0,.85);
+}
+
+.id-price__plaseholder {
   font-size: 5px;
 }
 
-.id-price-block__rem {
+.id-price__rem {
   color: grey;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 11px;
