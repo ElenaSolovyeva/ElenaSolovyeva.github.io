@@ -8,6 +8,11 @@
   src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Lett";
+  src: url("../fonts/lett.woff") format("woff"), src: url("../fonts/lett.woff2") format("woff2");
+}
+
 /* чтобы при width: 100%; не вываливались из блока padding'и margin'ы */
 html {
   box-sizing: border-box;
