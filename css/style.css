@@ -75,7 +75,7 @@ img {
 
 .header {
   width: 100%;
-  background-color: #000000;/*#503a3d;*/
+  background-color: #282828;/*#503a3d;*/
 }
 
 .nav {
@@ -88,7 +88,7 @@ img {
   margin: 0 auto;
   width: 1150px;
   min-height: 30px;
-  background-color: #000000;
+  background-color: #282828;
 }
 
 .nav--article {
@@ -139,13 +139,16 @@ img {
 }
 
 .nav__link:hover {
-  color: red;
-  /* background-color: #a06700; */
+  color: #e06e6a;
 }
+/* 
+.nav__link:visited {
+  color:#f6f2ef;
+} */
 
-.nav__link:active {
-  background-color: #663D15; /*(102,61,21)*/
-}
+/* .nav__link:active {
+  background-color: #663D15;
+} */
 /* MAIN */
 
 .container {
@@ -154,10 +157,6 @@ img {
   width: 1200px;
   background-color: #ffffff;
 }
-
-/* .catalog {
-  padding-left: 25px;
-} */
 
 .part__title {
   margin: 0 0 15px 0;
@@ -345,6 +344,25 @@ img {
 .book__external-link {
   margin: 0;
   padding-left: 9px;
+}
+
+
+.reserv {
+  position: relative;
+  opacity: 70%;
+}
+
+.reserv::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 50px;
+
+  width: 150px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("../img/reserved.png");
 }
 
 /* PRODUCT CARD */
