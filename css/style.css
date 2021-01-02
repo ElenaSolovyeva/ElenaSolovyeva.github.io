@@ -141,7 +141,7 @@ img {
 .nav__link:hover {
   color: #e06e6a;
 }
-/* 
+/*
 .nav__link:visited {
   color:#f6f2ef;
 } */
@@ -517,5 +517,130 @@ img {
 /* МОДАЛЬНЫЕ ОКНА */
 
 /* ЗАКАЗ - ОПЛАТА - ДОСТАВКА */
+
+/* FOOTER */
+
+.footer  {
+  width: 100%;
+  padding: 30px;
+  min-height: 30px;
+  background-color: #282828;
+}
+
+.footer__wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 1150px;
+  margin: 0 auto;
+
+  color: #ffffff;
+}
+
+.footer__left {
+  width: 152px;
+  margin: 0;
+}
+
+.footer__middle {
+  width: auto;
+  margin: 0;
+}
+
+.footer__right {
+  width: 82px;
+  margin: 0;
+}
+
+
+.footer__link--up {
+  display: block;
+  position: relative;
+  color: #ffffff;
+}
+
+.footer__link--up::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 1px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  /* background-color: white; */
+  background-image: url("../img/up-icon-white.svg");
+}
+
+.footer__link--up:hover {
+  color: #e06e6a;
+}
+
+.footer__link--up:hover:after {
+  background-image: url("../img/up-icon-red.svg");
+}
+
+.contact {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0 30px;
+}
+
+.contact__item {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.contact__item--email {
+  width: 350px;
+  height: auto;
+  margin-right: 0;
+}
+
+.contact__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: #ffffff;
+}
+
+.contact__link--facebook {
+  background-size: cover;
+  background-image: url("../img/facebook-icon-black.svg");
+}
+
+.contact__link--facebook:hover {
+  background-color: transparent;
+  background-image: url("../img/facebook-icon-blue.svg");
+}
+
+.contact__link--telegram {
+  background-size: cover;
+  background-image: url("../img/telegram-icon-white-2.svg");
+}
+
+.contact__link--telegram:hover {
+  background-color: transparent;
+  background-image: url("../img/telegram-icon-blue.svg");
+}
+
+
+.contact__link--email:hover {
+  color: #68a7de;
+}
+
+
 
 /* Подробная карточка товара */
