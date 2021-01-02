@@ -15,25 +15,27 @@
 	<h1 class="visually-hidden">Книги на русском языке</h1>
 	<nav class="nav">
 		<ul class="nav__list reset-list">
-			<li class="nav__item button">
-				<a href="#" class="nav__link" name="up">Предлагаю книги:</a>
+			<li class="nav__item">
+				<a href="#" name="up"></a>
+				<button class="nav__link nav__link--offer" id="offer" aria-label="Предлагаю книги">Предлагаю книги:</button>
 			</li>
 			<li class="nav__item">
-				<a href="#children" class="nav__link">детские</a>
+				<a class="nav__link" href="#children">детские</a>
 			</li>
 			<li class="nav__item">
-				<a href="#adults" class="nav__link">взрослые:)</a>
+				<a class="nav__link" href="#adults">взрослые:)</a>
 			</li>
 			<li class="nav__item">
-				<a href="#math" class="nav__link">по математике</a>
+				<a class="nav__link" href="#math">по математике</a>
 			</li>
 		</ul>
 		<ul class="nav__list reset-list">
 			<li class="nav__item">
-				<a href="#" class="nav__link">как заказать</a>
+				<a href="#" name="up"></a>
+				<button  class="nav__link nav__link--order" id="order" aria-label="как заказать">как заказать</button>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">доставка</a>
+				<button  class="nav__link" id="delivery" aria-label="доставка">доставка</button>
 			</li>
 			<li class="nav__item">
 				<a href="#contacts" class="nav__link">контакты</a>
@@ -43,11 +45,52 @@
 </header>
 
 <main class="container">
-	<section class="intro visually-hidden">
-		<h2>Как заказать и оплатить</h2>
-		<p class="intro__text-block"></p>
-		<p class="intro__text-block"></p>
-		<p class="intro__text-block"></p>
+	<section class="modal">
+		<div class="modal__window modal__window--intro visually-hidden">
+			<h2 class="modal__title visually-hidden">Предлагаю книги на русском языке в Германии</h2>
+			<p class="modal__text">Добрый день!</p>
+			<p class="modal__text">Предлагаю книги на русском языке в Германии:</p>
+			<p class="modal__text">&#9830; для детей - книги, из которых мы уже выросли или так и не доросли;</p>
+			<p class="modal__text">&#9830; для взрослых - парочка книг, с которыми готова расстаться.</p>
+			<p class="modal__text">&#9830; для студентов - учебники по мат.анализу и линейной алгебре; </p>
+			<p class="modal__text">Почти все детские книги были куплены на labirint.ru еще в Москве, в основном в 2011-2012 гг.,
+				покупала для своего ребенка, старалась выбирать издания хорошего качества, с иллюстрациями известных художников
+				 и адекватными переводами.</p>
+			<p class="modal__text">Прилагаю список в экселевском формате (можно открыть также в гугл-таблицах).
+				Ссылка для скачивания:
+				<a  class="modal__link" href="https://transfiles.ru/qa1dd" target="_blank">https://transfiles.ru/qa1dd</a>
+			</p>
+			<button class="close-button" aria-label="закрыть"></button>
+		</div>
+
+		<div class="modal__window modal__window--order visually-hidden">
+			<h2 class="modal__title">Как сделать заказ</h2>
+			<p class="modal__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети.</p>
+			<p class="modal__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
+				и сброшу удобным Вам спосом список заказанных книг и реквизиты для оплаты.
+				О встрече можно договориться по телефону или в соц сетях.
+			</p>
+			<p class="modal__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
+				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
+			</p>
+			<button class="close-button" aria-label="закрыть"></button>
+		</div>
+
+		<div class="modal__window modall__window--delivery">
+			<h2 class="modal__title">Доставка</h2>
+			<p class="modal__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
+				или договориться о встрече в Ульме, Мюнхене или Штутгарте.
+				Звоните/пишите, договоримся.
+			</p>
+			<p class="modal__text">Возможна отправка почтой (DHL, Hermes). Книги будут отправлены не позднее 3х дней после оплаты,
+				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.</p>
+			<p class="modal__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габаритов заказанных книг.</p>
+			<p class="modal__text">Тарифы:
+				<a href="#" class="modal__link">DHL</a>,
+				<a href="#" class="modal__link">Hermes</a>
+			</p>
+			<button class="close-button" aria-label="закрыть"></button>
+		</div>
 	</section>
 
 	<div class="catalog">
@@ -289,42 +332,7 @@
 </footer>
 
 
-<section>
-	<div class="modal-block modal-block--intro visually-hidden">
-		<h2 class="modal-block__title visually-hidden">Предлагаю книги на русском языке в Германии</h2>
-		<p class="modal-block__text">Добрый день!</p>
-		<p class="modal-block__text">Предлагаю книги на русском языке в Германии:</p>
-		<p class="modal-block__text"></p>
-		<p class="modal-block__text"></p>
-	</div>
 
-	<div class="modal-block modal-block--order visually-hidden">
-		<h2 class="modal-block__title">Как сделать заказ</h2>
-		<p class="modal-block__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети.</p>
-		<p class="modal-block__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
-			и сброшу удобным Вам спосом таблицу/список заказанных книг и реквизиты для оплаты.
-			О встрече можно договориться по телефону или в соц сетях.
-		</p>
-		<p class="modal-block__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
-			скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
-		</p>
-	</div>
-
-	<div class="modal-block modal-block--delivery visually-hidden">
-		<h2 class="modal-block__title">Доставка</h2>
-		<p class="modal-block__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
-			или договориться о встрече в Ульме, Мюнхене или Штутгарте.
-			Звоните/пишите, договоримся.
-		</p>
-		<p class="modal-block__text">Возможна отправка почтой (DHL, Hermes). Книги будут отправлены не позднее 3х дней после оплаты,
-			скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.</p>
-		<p class="modal-block__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габаритов заказанных книг.</p>
-		<p class="modal-block__text">Тарифы:
-			<a href="#" class="modal-block__link">DHL</a>,
-			<a href="#" class="modal-block__link">Hermes</a>
-		</p>
-	</div>
-</section>
 
 </body>
 </html>

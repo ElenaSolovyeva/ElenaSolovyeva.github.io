@@ -114,11 +114,34 @@ img {
   margin-right: 20px;
 }
 
-.nav__text,
-.nav__link {
+.nav__text {
   margin: 0;
   padding: 0;
   color: #ffffff;
+}
+
+.nav__link {
+  width: 90px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #282828;
+  border: none;
+  outline: none;
+}
+
+.nav__link--offer {
+  width: 150px;
+}
+
+.nav__link--order {
+  width: 110px;
 }
 
 .nav__link--home {
@@ -141,17 +164,16 @@ img {
 .nav__link:hover {
   color: #e06e6a;
 }
-/*
-.nav__link:visited {
-  color:#f6f2ef;
-} */
 
-/* .nav__link:active {
-  background-color: #663D15;
-} */
+.nav__link:active {
+  color: #e06e6a;
+  opacity: 0.8;
+}
+
 /* MAIN */
 
 .container {
+  position: relative;
   margin: 0 auto;
   padding: 50px 25px;
   width: 1200px;
@@ -513,11 +535,6 @@ img {
   font-size: 11px;
 }
 
-
-/* МОДАЛЬНЫЕ ОКНА */
-
-/* ЗАКАЗ - ОПЛАТА - ДОСТАВКА */
-
 /* FOOTER */
 
 .footer  {
@@ -641,6 +658,62 @@ img {
   color: #68a7de;
 }
 
+/* МОДАЛЬНЫЕ ОКНА */
+
+.modal__window {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
 
 
-/* Подробная карточка товара */
+  margin: 0 auto;
+  padding: 15px 25px;
+  width: 550px;
+  height: auto;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 0 2px 0 2px;
+}
+
+.modal__window--intro {
+  left: 40px;
+}
+
+.modal__window--order,
+.modall__window--delivery {
+  right: 10px;
+}
+
+
+.modal__text {
+  margin: 0 0 10px 0;
+  padding: 10px 10px 0 10px;
+}
+
+.close-button {
+  position: absolute;
+  width: -1px;
+  height: -1px;
+  border: none;
+  top: 20px;
+  right: 20px;
+}
+
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  /* background-color: green; */
+  background-image: url("../img/close-icon-grey.svg");
+}
+
+.close-button:hover:after {
+  background-image: url("../img/close-icon-black.svg");
+}
