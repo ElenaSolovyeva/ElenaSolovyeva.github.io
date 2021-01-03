@@ -20,13 +20,13 @@
 				<button class="nav__link nav__link--offer" id="offer" aria-label="Предлагаю книги">Предлагаю книги:</button>
 			</li>
 			<li class="nav__item">
-				<a class="nav__link" href="#children">детские</a>
+				<a class="nav__link" id="childrenLink" href="#children">детские</a>
 			</li>
 			<li class="nav__item">
-				<a class="nav__link" href="#adults">взрослые:)</a>
+				<a class="nav__link" id="adultsLink" href="#adults">взрослые:)</a>
 			</li>
 			<li class="nav__item">
-				<a class="nav__link" href="#math">по математике</a>
+				<a class="nav__link" id="mathLink" href="#math">по математике</a>
 			</li>
 		</ul>
 		<ul class="nav__list reset-list">
@@ -35,10 +35,10 @@
 				<button  class="nav__link nav__link--order" id="order" aria-label="как заказать">как заказать</button>
 			</li>
 			<li class="nav__item">
-				<button  class="nav__link" id="delivery" aria-label="доставка">доставка</button>
+				<button class="nav__link" id="delivery" aria-label="доставка">доставка</button>
 			</li>
 			<li class="nav__item">
-				<a href="#contacts" class="nav__link">контакты</a>
+				<a class="nav__link nav__link--narrow" id="contactsLink" href="#contacts">контакты</a>
 			</li>
 		</ul>
 	</nav>
@@ -47,16 +47,16 @@
 <main class="container">
 	<section class="modal">
 		<div class="modal__window modal__window--intro visually-hidden">
-			<h2 class="modal__title visually-hidden">Предлагаю книги на русском языке в Германии</h2>
+			<h2 class="modal__title  visually-hidden">Предлагаю книги на русском языке в Германии</h2>
 			<p class="modal__text">Добрый день!</p>
-			<p class="modal__text">Предлагаю книги на русском языке в Германии:</p>
+			<p class="modal__text">Предлагаю книги на русском языке:</p>
 			<p class="modal__text">&#9830; для детей - книги, из которых мы уже выросли или так и не доросли;</p>
 			<p class="modal__text">&#9830; для взрослых - парочка книг, с которыми готова расстаться.</p>
 			<p class="modal__text">&#9830; для студентов - учебники по мат.анализу и линейной алгебре; </p>
 			<p class="modal__text">Почти все детские книги были куплены на labirint.ru еще в Москве, в основном в 2011-2012 гг.,
 				покупала для своего ребенка, старалась выбирать издания хорошего качества, с иллюстрациями известных художников
 				 и адекватными переводами.</p>
-			<p class="modal__text">Прилагаю список в экселевском формате (можно открыть также в гугл-таблицах).
+			<p class="modal__text">Прилагаю список в экселевском формате (можно открыть в гугл-таблицах).
 				Ссылка для скачивания:
 				<a  class="modal__link" href="https://transfiles.ru/qa1dd" target="_blank">https://transfiles.ru/qa1dd</a>
 			</p>
@@ -67,16 +67,16 @@
 			<h2 class="modal__title">Как сделать заказ</h2>
 			<p class="modal__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети.</p>
 			<p class="modal__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
-				и сброшу удобным Вам спосом список заказанных книг и реквизиты для оплаты.
+				и сброшу удобным Вам способом список заказанных книг и реквизиты для оплаты.
 				О встрече можно договориться по телефону или в соц сетях.
 			</p>
-			<p class="modal__text">- При отправке почтой книги будут отправлены не позднее 3х дней после оплаты,
+			<p class="modal__text">- При доставке почтой книги будут отправлены не позднее 3х дней после оплаты,
 				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
 			</p>
 			<button class="close-button" aria-label="закрыть"></button>
 		</div>
 
-		<div class="modal__window modall__window--delivery">
+		<div class="modal__window modal__window--delivery visually-hidden">
 			<h2 class="modal__title">Доставка</h2>
 			<p class="modal__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
 				или договориться о встрече в Ульме, Мюнхене или Штутгарте.
@@ -84,10 +84,10 @@
 			</p>
 			<p class="modal__text">Возможна отправка почтой (DHL, Hermes). Книги будут отправлены не позднее 3х дней после оплаты,
 				скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.</p>
-			<p class="modal__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габаритов заказанных книг.</p>
+			<p class="modal__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габарита заказанных книг.</p>
 			<p class="modal__text">Тарифы:
-				<a href="#" class="modal__link">DHL</a>,
-				<a href="#" class="modal__link">Hermes</a>
+				<a class="modal__link" href="https://www.deutschepost.de/de/w/buecherundwarensendung.html" target="_blank">DHL</a>,
+				<a class="modal__link" href="https://www.myhermes.de/preise/paeckchen-paket/" target="_blank">Hermes</a>
 			</p>
 			<button class="close-button" aria-label="закрыть"></button>
 		</div>
@@ -331,8 +331,8 @@
 	</div>
 </footer>
 
-
-
+<script src="js/modalWindows.js"></script>
+<script src="js/closeWindow.js"></script>
 
 </body>
 </html>

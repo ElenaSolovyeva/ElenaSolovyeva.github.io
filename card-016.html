@@ -15,13 +15,14 @@
 	<nav class="nav nav--article">
 		<ul class="nav__list reset-list">
 			<li class="nav__item">
-				<a href="#" class="nav__link" name="up">как заказать</a>
+				<a href="#" name="up"></a>
+				<button  class="nav__link nav__link--order" id="order" aria-label="как заказать">как заказать</button>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">доставка</a>
+				<button class="nav__link" id="delivery" aria-label="доставка">доставка</button>
 			</li>
 			<li class="nav__item">
-				<a href="#contacts" class="nav__link">контакты</a>
+				<a class="nav__link nav__link--narrow" id="contactsLink" href="#contacts">контакты</a>
 			</li>
 		</ul>
 		<ul class="nav__list reset-list">
@@ -79,7 +80,7 @@
 	</div>
 
 	<div>
-		<p class="slider">Здесть будет слайдер</p>
+		<p class="slider">Здесть будет слайдер. Кнопки верхнего меню пока не работают.</p>
 	</div>
 </main>
 
@@ -110,6 +111,9 @@
 		</div>
 	</div>
 </footer>
+
+<script src="js/modalWindows.js"></script>
+<script src="js/closeWindow.js"></script>
 
 </body>
 

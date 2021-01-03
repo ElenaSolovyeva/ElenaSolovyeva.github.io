@@ -25,12 +25,20 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   margin: 0;
   padding: 0;
   min-width: 1200px;
   background-color: #f8f4f1;
   color:#000000;
   font-family: "OpenSans", "Arial", sans-serif;
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {
@@ -106,6 +114,7 @@ img {
 
 .nav__item {
   display: block;
+  position: relative;
   padding: 3px 15px 4px 15px;
   height: 100%;
 }
@@ -137,7 +146,33 @@ img {
 }
 
 .nav__link--offer {
+  position: relative;
   width: 150px;
+}
+
+.nav__link--offer::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -33px;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-image: url("../img/my-foto.jpg");
+  border-radius: 50%;
+
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.nav__link--offer:hover:before {
+  left: -73px;
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+
+
 }
 
 .nav__link--order {
@@ -170,6 +205,10 @@ img {
   opacity: 0.8;
 }
 
+.nav__button--active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
 /* MAIN */
 
 .container {
@@ -457,6 +496,10 @@ img {
   background-color: transparent;
 }
 
+.article__content:hover {
+  font-weight: bold;
+}
+
 .article__content--link {
   width: 70px;
 }
@@ -538,6 +581,7 @@ img {
 /* FOOTER */
 
 .footer  {
+  flex-shrink: 0;
   width: 100%;
   padding: 30px;
   min-height: 30px;
@@ -569,7 +613,7 @@ img {
 }
 
 .footer__right {
-  width: 82px;
+  width: 85px;
   margin: 0;
 }
 
@@ -578,6 +622,8 @@ img {
   display: block;
   position: relative;
   color: #ffffff;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 16px;
 }
 
 .footer__link--up::after {
@@ -634,12 +680,14 @@ img {
 }
 
 .contact__link--facebook {
-  background-size: cover;
+  margin-left: 5px;
+  background-size: 80%;
+  background-repeat: no-repeat;
   background-image: url("../img/facebook-icon-black.svg");
 }
 
 .contact__link--facebook:hover {
-  background-color: transparent;
+  background-size: cover;
   background-image: url("../img/facebook-icon-blue.svg");
 }
 
@@ -649,13 +697,25 @@ img {
 }
 
 .contact__link--telegram:hover {
+  margin-left: 5px;
   background-color: transparent;
   background-image: url("../img/telegram-icon-blue.svg");
 }
 
 
+.contact__link--email {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #379dd8; /*4d91ee  #1d93d3 #68a7de; */
+}
+
 .contact__link--email:hover {
-  color: #68a7de;
+  color: #1791d7; /*#1270f1;  #38b2e5*/
+  text-decoration: underline;
+}
+
+.contact__link--email:active {
+  opacity: 0.7;
 }
 
 /* МОДАЛЬНЫЕ ОКНА */
@@ -673,7 +733,7 @@ img {
 
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #f8f4f1; /* fdefcc; */
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   border-radius: 0 2px 0 2px;
 }
@@ -683,14 +743,22 @@ img {
 }
 
 .modal__window--order,
-.modall__window--delivery {
+.modal__window--delivery {
   right: 10px;
 }
-
 
 .modal__text {
   margin: 0 0 10px 0;
   padding: 10px 10px 0 10px;
+}
+
+.modal__link {
+  color: #1868a0;
+  border-bottom: 1px dashed #1868a0;
+}
+
+.modal__link:hover {
+  font-weight: bold;
 }
 
 .close-button {
@@ -710,10 +778,15 @@ img {
   width: 30px;
   height: 30px;
   background-size: cover;
-  /* background-color: green; */
-  background-image: url("../img/close-icon-grey.svg");
+  background-image: url("../img/close-icon-black.svg");
 }
 
 .close-button:hover:after {
-  background-image: url("../img/close-icon-black.svg");
+  background-image: url("../img/close-icon-grey.svg");
+}
+
+/* SLIDER */
+
+.slider {
+  color: grey;
 }
