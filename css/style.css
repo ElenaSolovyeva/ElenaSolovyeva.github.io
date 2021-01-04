@@ -123,13 +123,7 @@ img {
   margin-right: 20px;
 }
 
-.nav__text {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-}
-
-.nav__link {
+.nav__element {
   width: 90px;
   height: 30px;
   margin: 0;
@@ -145,12 +139,27 @@ img {
   outline: none;
 }
 
-.nav__link--offer {
+.nav__element:hover {
+  color: #e06e6a;
+}
+
+.nav__element:active {
+  color: #e06e6a;
+  opacity: 0.8;
+}
+
+
+.nav__button--active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav__button--offer {
   position: relative;
   width: 150px;
 }
 
-.nav__link--offer::before {
+.nav__button--offer::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -166,16 +175,14 @@ img {
   -webkit-transition: all 0.5s ease-out;
 }
 
-.nav__link--offer:hover:before {
+.nav__button--offer:hover:before {
   left: -73px;
   width: 70px;
   height: 70px;
   z-index: 2;
-
-
 }
 
-.nav__link--order {
+.nav__button--order {
   width: 110px;
 }
 
@@ -196,19 +203,7 @@ img {
   background-image: url(../img/home-icon.png);
 }
 
-.nav__link:hover {
-  color: #e06e6a;
-}
 
-.nav__link:active {
-  color: #e06e6a;
-  opacity: 0.8;
-}
-
-.nav__button--active {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
-}
 /* MAIN */
 
 .container {
@@ -428,6 +423,7 @@ img {
 
 /* PRODUCT CARD */
 .article {
+  position: relative;
   margin: 0 auto;
   padding: 50px 25px;
   width: 1000px;
@@ -455,11 +451,7 @@ img {
   height: auto;
   margin-right: 15px;
   padding-left: 15px;
-
-
 }
-
-.article__image {}
 
 .article__features {
   width: 500px;
@@ -720,30 +712,27 @@ img {
 
 /* МОДАЛЬНЫЕ ОКНА */
 
-.modal__window {
+.modal {
   position: absolute;
   z-index: 2;
-  top: 0px;
+  top: 37px;
 
-
-  margin: 0 auto;
   padding: 15px 25px;
   width: 550px;
   height: auto;
 
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
-  background-color: #f8f4f1; /* fdefcc; */
+  background-color: #f8f4f1;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   border-radius: 0 2px 0 2px;
 }
 
-.modal__window--intro {
+.modal--article__features {
   left: 40px;
 }
 
-.modal__window--order,
-.modal__window--delivery {
+.modal--right {
   right: 10px;
 }
 

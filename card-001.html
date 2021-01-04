@@ -16,18 +16,45 @@
 		<ul class="nav__list reset-list">
 			<li class="nav__item">
 				<a href="#" name="up"></a>
-				<button  class="nav__link nav__link--order" id="order" aria-label="как заказать">как заказать</button>
+				<button  class="nav__element nav__button nav__button--order" aria-label="как заказать">как заказать</button>
+				<div class="modal modal--left modal--order visually-hidden">
+					<h2 class="modal__title">Как сделать заказ</h2>
+					<p class="modal__text">- Выберите интересующие вас книги и скиньте мне информацию в почту или соц.сети.</p>
+					<p class="modal__text">- Я сделаю рассчет суммы заказа и, если необходимо, доставки
+						и сброшу удобным Вам способом список заказанных книг и реквизиты для оплаты.
+						О встрече можно договориться по телефону или в соц сетях.
+					</p>
+					<p class="modal__text">- При доставке почтой книги будут отправлены не позднее 3х дней после оплаты,
+						скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.
+					</p>
+					<button class="close-button" aria-label="закрыть"></button>
+				</div>
 			</li>
 			<li class="nav__item">
-				<button class="nav__link" id="delivery" aria-label="доставка">доставка</button>
+				<button class="nav__element nav__button" aria-label="доставка">доставка</button>
+				<div class="modal modal--left modal--delivery visually-hidden">
+					<h2 class="modal__title">Доставка</h2>
+					<p class="modal__text">Самовывоз: забрать книги можно в Гайслингене (Geislingen an der Steige)
+						или договориться о встрече в Ульме, Мюнхене или Штутгарте.
+						Звоните/пишите, договоримся.
+					</p>
+					<p class="modal__text">Возможна отправка почтой (DHL, Hermes). Книги будут отправлены не позднее 3х дней после оплаты,
+						скан квитанции пришлю в почту или соц сети, чтобы можно было отследить посылку.</p>
+					<p class="modal__text">Стоимость доставки в цену не включена и рассчитывается под запрос, исходя из веса и габарита заказанных книг.</p>
+					<p class="modal__text">Тарифы:
+						<a class="modal__link" href="https://www.deutschepost.de/de/w/buecherundwarensendung.html" target="_blank">DHL</a>,
+						<a class="modal__link" href="https://www.myhermes.de/preise/paeckchen-paket/" target="_blank">Hermes</a>
+					</p>
+					<button class="close-button" aria-label="закрыть"></button>
+				</div>
 			</li>
 			<li class="nav__item">
-				<a class="nav__link nav__link--narrow" id="contactsLink" href="#contacts">контакты</a>
+				<a class="nav__element nav__link nav__link--narrow" href="#contacts">контакты</a>
 			</li>
 		</ul>
 		<ul class="nav__list reset-list">
 			<li class="nav__item button">
-				<a href="index.html" class="nav__link nav__link--home">на главную</a>
+				<a href="index.html" class="nav__element  nav__link nav__link--home">на главную</a>
 			</li>
 		</ul>
 	</nav>
@@ -119,8 +146,7 @@
 	</div>
 </footer>
 
-<script src="js/modalWindows.js"></script>
-<script src="js/closeWindow.js"></script>
+<script src="js/modal.js"></script>
 
 </body>
 
