@@ -428,6 +428,7 @@ img {
 
 /* PRODUCT CARD */
 .article {
+  position: relative;
   margin: 0 auto;
   padding: 50px 25px;
   width: 1000px;
